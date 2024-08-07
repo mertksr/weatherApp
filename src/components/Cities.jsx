@@ -2,7 +2,7 @@ import React from 'react'
 import {Formik , Form, Field, ErrorMessage} from 'formik'
 
 const options = [
-    { value: '', label: "Seçim Yapın" },
+    { value: '', label: "Choose City" },
     { value: 'Adana', label: "Adana" },
     { value: 'Adıyaman', label: "Adıyaman" },
     { value: 'Afyonkarahisar', label: "Afyonkarahisar" },
@@ -97,8 +97,8 @@ const City = ( { onCitySelect }) => (
       {({ setFieldValue }) => (
         <Form>
           <div>
-            <label htmlFor="selectedOption">Select an Option:</label>
-            <Field as="select" name="selectedOption">
+            <label htmlFor="selectedOption">Select City</label>
+            <Field as="select" name="selectedOption" className={"cities"}>
               {options.map((option) => (
                 <option key={option.value} value={option.value}>
                   {option.label}
@@ -106,8 +106,9 @@ const City = ( { onCitySelect }) => (
               ))}
             </Field>
             <ErrorMessage name="selectedOption" component="div" />
+            <button type="submit">Submit</button>
+
           </div>
-          <button type="submit">Submit</button>
         </Form>
       )}
     </Formik>

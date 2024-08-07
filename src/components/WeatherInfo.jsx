@@ -1,6 +1,6 @@
 import React from 'react'
 
-function WeatherInfo({weather}) {
+function WeatherInfo({weather, index}) {
       const getDayName = (dateString) => {
     const date = new Date(dateString);
     const options = { weekday: "long" }; // 'long' seçeneği tam gün adını verir
@@ -8,14 +8,14 @@ function WeatherInfo({weather}) {
   };
   return (
     
-    <div className="weatherInfo">
+    <div className="weatherInfo-single">
         <div key={weather.datetime}>
-            <p>
+            <p className={"weather"}>
             {getDayName(weather.datetime)}
             <br/>
             {weather.temp} °C
             <br/>
-            Hissedilen: {weather.feelslike}°C
+            Feels like: {weather.feelslike}°C
             </p>
         </div>
   

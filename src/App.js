@@ -1,17 +1,13 @@
-import './App.css';
-import Weather from './components/Weather'
-import City from './components/Cities'
-import {useState} from 'react'
+import "./App.css";
+import {ThemeProvider} from "./context/ThemeContext";
+
+import Container from './components/Container'
 function App() {
-  const [selectedCity, setSelectedCity] = useState('');
 
   return (
-    
-    <div className="App">
-      <City onCitySelect={setSelectedCity}/>
-      <Weather city={selectedCity}/>
-
-    </div>
+    <ThemeProvider>
+      <Container/>
+    </ThemeProvider>
   );
 }
 
