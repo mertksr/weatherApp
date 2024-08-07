@@ -1,3 +1,5 @@
 A weather app for those who curious about the weather
-![dark](https://github.com/user-attachments/assets/75965905-7f6a-48a7-bc0d-63e3c02df010)
-![light](https://github.com/user-attachments/assets/75818076-5b57-401b-aad9-3e8e6d4f1fa1)
+
+![dark](https://github.com/user-attachments/assets/e566af52-ca39-4b5a-b0fc-27805d9bea4e)
+
+![light](https://github.com/user-attachments/assets/a3fd724f-2785-4462-9ee7-e187dfa8504c)
