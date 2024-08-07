@@ -4,7 +4,7 @@ function WeatherInfo({weather, index}) {
       const getDayName = (dateString) => {
     const date = new Date(dateString);
     const options = { weekday: "long" }; // 'long' seçeneği tam gün adını verir
-    return date.toLocaleDateString("tr-TR", options);
+    return date.toLocaleDateString("en-EN", options);
   };
   return (
     
